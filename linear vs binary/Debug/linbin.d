@@ -1,0 +1,1 @@
+linbin.o: ../linbin.cpp

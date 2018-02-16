@@ -1,0 +1,1 @@
+linsrc.o: ../linsrc.cpp
