@@ -18,7 +18,7 @@ int main()
 
 	int a[size] ;
 
-	populatedNum(a, size);
+	//populatedNum(a, size);
 
 	userInput(a , size);
 

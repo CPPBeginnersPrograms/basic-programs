@@ -5,7 +5,7 @@ using namespace std;
 
 void userInput(int [], int );
 int linSrc(int [], int ,int );
-void populateNum(int [], int);
+//void populateNum(int [], int);
 void repeat(int[], int);
 int main()
 {
@@ -83,13 +83,13 @@ int linSrc(int array[], int size, int Uval)
 	return -1;
 }
 
-void populateNum(int array[], int size)
-{
-	for (int i = 1; i <= size; i++)
-	{
-		array[i -1] = i;
-	}
-}
+//void populateNum(int array[], int size)
+//{
+//	for (int i = 1; i <= size; i++)
+//	{
+//		array[i -1] = i;
+//	}
+//}
 
 void repeat(int array[], int size)
 {

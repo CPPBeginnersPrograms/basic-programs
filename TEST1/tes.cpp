@@ -21,9 +21,9 @@ int main()
 {
 
 //Ask the user for the seed color
-	string color1 = "Red1";"Blue1";
+	string color1 = " ";
 
-	cout << "Type the Color of Seed you want ?\n " << "Red1 or Blue1\n";
+	cout << "Type the Color of Seed you want ?\n " << "Red or Blue\n";
 
 	getline(cin, color1);
 
@@ -38,7 +38,7 @@ int main()
 	cin >> temp1;
 
 	//Get soil moisture from user.
-	string moist1 = "Wet1";"Dry1";
+	string moist1 = " ";
 
 
 
@@ -46,7 +46,7 @@ int main()
 
 
 //if Red seed actions
-	if(color1 == "Red1")
+	if(color1 == "Red" || color1 == "red")
 	{
 
 
@@ -54,20 +54,20 @@ int main()
 
 		if(temp1 >= 75)
 		{
-			cout << "Type the Soil moisture:\n" << "Wet1 or Dry1 ?\n\n";
+			cout << "Type the Soil moisture:\n" << "Wet or Dry ?\n\n";
 
 			cin >> moist1;
 
 		//If soil is wet
 
-			if(moist1 == "Wet1")
+			if(moist1 == "Wet")
 			{
 				//outpout sunflower
 
 				cout << "According to your selected options you will grow a sunflower\n";
 			//If soil is dry
 			}
-			else if(moist1 == "Dry1")
+			else if(moist1 == "Dry")
 
 			{
 					//output dandelion
@@ -87,19 +87,19 @@ int main()
 
 
 //if blue seed actions
-	else if(color1 == "Blue1")
+	else if(color1 == "Blue" || color1 == "blue")
 	{
 
 
 	//If temp is between 60 and 70
 		if(temp1 >= 60 and temp1 <=70)
 		{
-			cout << "Type the Soil moisture:\n" << "Wet1 or Dry1 ?\n\n";
+			cout << "Type the Soil moisture:\n" << "Wet or Dry ?\n\n";
 
 			cin >> moist1;
 
 		//if soil is wet
-			if(moist1 == "Wet1")
+			if(moist1 == "Wet")
 			{
 
 
@@ -108,7 +108,7 @@ int main()
 
 			}
 		//if soil dry
-			else if(moist1 == "Dry1")
+			else if(moist1 == "Dry")
 			{
 					//output sunflower
 				cout << "According to your options you will grow a sunflower\n";
@@ -121,7 +121,7 @@ int main()
 
 
 	//output mushroom
-			cout << "According to your options the temp below rangin from 60 -70 d will grow a Mushroom\n";
+			cout << "According to your options the temp below ranging from 60 -70 d will grow a Mushroom\n";
 		}
 		}
 	}
