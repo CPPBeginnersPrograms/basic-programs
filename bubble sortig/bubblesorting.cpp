@@ -69,7 +69,7 @@ int main()
 void ascending(int a[], int aSize)
 {
 	for(int pass = 0; pass < aSize - 1; pass++ )	//passes
-			for(int i = 0; i < aSize -1 ; i++)	//one pass
+			for(int i = 0; i < aSize -1 ; i++) //one pass
 				if(a[i] > a[i + 1])			//one comparison
 				{
 					int hold = a[i];				//one swap

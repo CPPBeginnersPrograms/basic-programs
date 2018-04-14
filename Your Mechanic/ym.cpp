@@ -6,62 +6,79 @@
 
 
 #include<iostream>
-#include<iomanip>
-#include<set>
+#include<vector>
+//#include<String>
 
-
+void rem(int [],int, int);
+void printarray(int[], int);
 using namespace std;
 
 
+int main()
+{
+	int usrinput;
 
-//int main()
-//{
-//
-//std::set<int>::iterator it;
-////create an empty array
-//const int arraySize = 10;
-//	int aArray[arraySize] = { }, num;
-//
-//cout<<"Enter the Elements\n";
-//
-//
-//for(int i  = 1; i <= arraySize; i++)
-//	cin>>aArray[i];
-//
-//
-////declare a set
-//std::set<int>add;
-//
-//
-//
-//
-////add elements
-//
-//add.insert(aArray,aArray+10);
-//
-////print elements
-//cout<<"The elements are: \n";
-//for(it = add.begin(); it!= add.end(); it++)
-//	cout<<" "<<*it;
-//
-//cout<<endl;
-//
-//
-//
-////erase elements
-//int delelement;
-//cout<<"Enter the element you want to delete: \n";
-//
-//cin>>delelement>>delelement;
-//
-//add.erase(delelement);
-//add.erase(delelement);
-//
-//
-////print elements
-//cout<<"The elements are: \n";
-//for(it = add.begin(); it!= add.end(); it++)
-//	cout<<" "<<*it;
-//
-//return 0;
-//}
+	const int arraySize = 10;
+	const int arraySize1 = 10;
+	int setA[arraySize] = {1,2,3,6,10};
+	int setB[arraySize1] = {4,5,7,8,9};
+
+	cout<<"The elements are:\n";
+	//printarray(setA,arraySize);
+
+	for(int i =0; i < arraySize; i++)
+	{
+		for(int j =0; j < arraySize1; j++)
+		{
+
+		int temp = setA[i];
+
+		if(setA[i] == temp)
+		{
+			setA[i] = setB[j];
+		}
+		cout<<setB[j];
+		}
+
+
+	}
+
+//	cout<<"Enter the number\n";
+//	cin>>usrinput;
+
+	//rem(setA,arraySize,usrinput);
+
+
+
+
+//			if(usrinput > arr[5])
+
+	return 0 ;
+}
+
+void rem(int anyarray[],int arraySize, int userinput)
+{
+
+				cout<<"{";
+				for(int j = 0; j < userinput; j++)
+				{
+					cout<<anyarray[j]<<",";
+				}
+				cout<<"}";
+
+				cout<<"{";
+				for(int k = userinput; k < arraySize; k++)
+				{
+					cout<<anyarray[k]<<",";
+				}
+				cout<<"}";
+				}
+
+void printarray(int anyarray[], int arraySize)
+{
+	for(int i = 0; i < arraySize; i++)
+		anyarray[i] = 2*i;
+
+	for(int j =0; j < arraySize; j++)
+		cout<<anyarray[j]<<" ";
+}

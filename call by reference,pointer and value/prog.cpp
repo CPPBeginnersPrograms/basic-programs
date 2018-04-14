@@ -42,7 +42,7 @@ int main()
 }
 
 
-void cubebyvalue(int element)			//function
+void cubebyvalue(int element)			//call by value function
 {
 	std::cout<<"printing from function : ";
 	std::cout<< element*element*element<<"\n";
