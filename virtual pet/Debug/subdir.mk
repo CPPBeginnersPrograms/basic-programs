@@ -5,18 +5,15 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../Vpet.cpp \
-../Vpetmain.cpp \
-../ym.cpp 
+../Vpetmain.cpp 
 
 OBJS += \
 ./Vpet.o \
-./Vpetmain.o \
-./ym.o 
+./Vpetmain.o 
 
 CPP_DEPS += \
 ./Vpet.d \
-./Vpetmain.d \
-./ym.d 
+./Vpetmain.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

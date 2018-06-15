@@ -11,9 +11,10 @@ int main()
 	float array[20];
 
 	cout<<"the number of bytes in the array is "
-			<<sizeof(array)
+			<<sizeof (array)
 			<<"\n the number of bytes returned by the getsize is "
-			<<getsize(array)<<endl;
+			<<getsize(array)<<endl
+			<<sizeof array / sizeof(float)<<": is the size of array elements";
 	return 0;
 
 }

@@ -5,17 +5,22 @@ using namespace std;
 
 void decBin(int num);
 void decHex(int num);
-
+void bindec(int num);
 int main()
 {
 
 	int n;
-
+	int c;
 	cout<<"Enter the num : \n";
 	cin>>n;
 
 	decBin(n);
 	decHex(n);
+
+	cout<<"enter the binary: \n";
+	cin >> c;
+	bindec(c);
+
 	return 0;
 
 }
@@ -60,4 +65,21 @@ void decHex(int num)
 
 		cout<<bnum[j];
 
+	cout<<"\n";
+}
+
+void bindec(int num)
+{
+  int remin,temp, dec = 0, bi = 1;
+
+  temp = num;
+  while(num > 0)
+  {
+    remin = temp % 10;
+    dec = dec + remin * bi;
+    bi *= 2;
+    temp /= 10;
+  }
+
+  cout<< temp;
 }
