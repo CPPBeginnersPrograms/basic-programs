@@ -21,6 +21,7 @@ public:
 	void setCourseName(string name);	//set member function
 	string getCourseName();				//get member function
 	void displayMessage();				//member function prototypes
+	void classAverage();
 private:
 	string courseName; // private data member
 }; // end of class GradeBook
