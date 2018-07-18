@@ -22,8 +22,10 @@ public:
 	string getCourseName();				//get member function
 	void displayMessage();				//member function prototypes
 	void classAverage();
+	void studentResult();
 private:
 	string courseName; // private data member
+
 }; // end of class GradeBook
 
 
