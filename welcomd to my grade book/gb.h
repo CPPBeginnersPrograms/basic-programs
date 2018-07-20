@@ -22,10 +22,17 @@ public:
 	string getCourseName();				//get member function
 	void displayMessage();				//member function prototypes
 	void classAverage();
-	void studentResult();
+	//void studentResult();
+	void inputGrades();
+	void displayGradeReport();
+
 private:
 	string courseName; // private data member
-
+	int acount;
+	int bcount;
+	int ccount;
+	int dcount;
+	int fcount;
 }; // end of class GradeBook
 
 

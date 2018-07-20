@@ -21,10 +21,11 @@ int main()
 	//display the message
 	mygradebook.displayMessage(); // using object to display message.
 	mygradebook.classAverage();
-	mygradebook.studentResult();
-	gradebook1.setCourseName("C++ edition 7");
-
+	//mygradebook.studentResult();
+	gradebook1.setCourseName("C++ edition 7\n");
 	cout<<"\n\n recreated name for grade book 1 : "<<gradebook1.getCourseName();
+	gradebook1.inputGrades();
+	gradebook1.displayGradeReport();
 	cout<<"\n created for grade book 2 : "<<gradebook2.getCourseName();
 
 

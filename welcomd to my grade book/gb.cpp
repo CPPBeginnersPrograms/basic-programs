@@ -3,11 +3,17 @@
 #include"gb.h"
 #include<iomanip>
 
+
 using namespace std;
 
 	GradeBook::GradeBook (string name)
 	{
 		setCourseName(name);// call set function to initializing coursename
+		int acount = 0;
+		int bcount = 0;
+		int ccount = 0;
+		int dcount = 0;
+		int fcount = 0;
 	}
 	void GradeBook::setCourseName(string name)//set member function
 	{
@@ -36,9 +42,10 @@ using namespace std;
 	void GradeBook::classAverage()
 	{
 		int total = 0;
+		int grade = 0;
 		int GradeCounter = 0;
 		double Average = 0;
-		int grade = 0;
+
 		//srand(time(0));
 
 //		while(GradeCounter <= 10)
@@ -70,26 +77,86 @@ using namespace std;
 				cout<<"No Grades were Entered ";
 
 	}
-	void GradeBook::studentResult()
+	void GradeBook::inputGrades()
 	{
-		int passed = 0, failed = 0;
-		int grade = 0;
-//		int studentCounter = 0;
+		int grade;
 
-//		while(studentCounter < grade)
-//		{
-			if(grade < 60)
-			{
-				passed += 1;
-			}
-			else
-			{
-				failed += 1 ;
-			}
-//			studentCounter += 1;
-//		}
-		cout<<"\n\nThe total Passed are "<<passed<<" and total failed are "<<failed<<endl;
+		cout<<"Enter the grade : \n"
+				<<"Enter the EOF to exit."<<endl;
 
-		if(passed > 8)
-			cout<<"Bonus to Instructor!."<<endl;
+		while( (grade = cin.get() ) != EOF )
+		{
+			switch(grade)
+			{
+			case 'A' :
+			case 'a' :
+				acount++;
+				break;
+
+			case 'B':
+			case 'b':
+				bcount++;
+				break;
+
+			case 'C':
+			case 'c':
+				ccount++;
+				break;
+
+			case 'D':
+			case 'd':
+				dcount++;
+				break;
+
+			case 'F':
+			case 'f':
+				fcount++;
+				break;
+
+			case '\n':
+			case '\t':
+			case ' ':
+				break;
+
+			default:
+				cout<<"Incorrect letter entered enter again. \n";
+				break;
+			}
+		}
 	}
+
+	void GradeBook::displayGradeReport()
+	{
+		cout<<"The total no of students received each grades are : \n"
+				<<"A : "<< acount
+				<<"\nB : "<<bcount
+				<<"\nC : "<< ccount
+				<<"\nD : "<<dcount
+				<<"\nF : "<<fcount<<endl;
+	}
+//	void GradeBook::studentResult()
+//	{
+//		int passed = 0, failed = 0;
+//
+////		int studentCounter = 0;
+//
+////		while(studentCounter < grade)
+////		{
+//		for(int i = 1; i <= GradeCounter; i++)
+//		{
+//			if(grade > 60)
+//			{
+//				passed += 1;
+//			}
+//			else
+//			{
+//				failed += 1 ;
+//			}
+//		}
+////			studentCounter += 1;
+////		}
+//		cout<<"\n\nThe total Passed are "<<passed<<" and total failed are "<<failed<<endl;
+//
+//		if(passed > 8)
+//			cout<<"Bonus to Instructor!."<<endl;
+//	}
