@@ -1,1 +1,0 @@
-toys.o: ../toys.cpp

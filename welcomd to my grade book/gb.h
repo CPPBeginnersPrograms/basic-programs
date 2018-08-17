@@ -18,8 +18,8 @@ class GradeBook
 public:
 
 	GradeBook (string name); // initializing constructor
-	void setCourseName(string name);	//set member function
-	string getCourseName();				//get member function
+	void setCourseName(string name);	//set member function (mutators)
+	string getCourseName();				//get member function)(accessor)
 	void displayMessage();				//member function prototypes
 	void classAverage();
 	//void studentResult();

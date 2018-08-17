@@ -1,1 +1,0 @@
-LinearSearch.o: ../LinearSearch.cpp

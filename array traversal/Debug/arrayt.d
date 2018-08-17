@@ -1,1 +1,0 @@
-arrayt.o: ../arrayt.cpp
