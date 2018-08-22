@@ -1,0 +1,14 @@
+Gunshot(7.65mm) -20
+Gunshot(5.56mm) -60
+MediKit 75
+Mask 0
+Injection 20
+FullMediKit 100
+Panhit -25
+Soda 50
+Bandage 35
+Gunshot(9mm) -87
+SniperShot -98
+Headshot -100
+Vehicle 0
+Dress 0

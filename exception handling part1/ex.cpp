@@ -20,9 +20,9 @@ int main()
 		else
 			cout<<"Mom is older than son."<<endl;
 	}
-	catch(int x)
+	catch(...)
 	{
-		cout<<" Mom's age cannot be less than Son's age."<<"\nERROR MSG :"<< x <<endl;
+		cout<<"\nERROR MSG :"<<" Mom's age cannot be less than Son's age."<<endl;
 	}
 
 
