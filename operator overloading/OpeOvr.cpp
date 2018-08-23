@@ -19,7 +19,7 @@ OpeOvr::OpeOvr(int x)
 	num = x;
 }
 
-OpeOvr OpeOvr::operator +(OpeOvr y)
+OpeOvr OpeOvr::operator+(OpeOvr y)
 {
 	OpeOvr newobj;
 	newobj.num = num + y.num;
