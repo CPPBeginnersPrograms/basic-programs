@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void printVector(vector<int> v)
+void printVector(vector<int>&v)
 {
 	cout << "|";
 	for(int i =0; i < v.size(); i++ ){
