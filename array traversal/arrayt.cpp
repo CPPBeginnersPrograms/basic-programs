@@ -39,7 +39,7 @@ using namespace std;
 //}
 //
 void fn( ){
-                             char c;
+char c;
 c =getc(stdin);
 if (c != ‘\n’) {
 fn( );

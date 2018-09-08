@@ -18,8 +18,8 @@ void fun() // function (in this case main thread)
 int main()
 {
 	thread t1(fun);//t1 starts running, here t1 is child thread
-	//t1.join(); //main thread waits t1 to finish
-	t1.detach(); // t1 runs on its own -- also called as daemon process
+	t1.join(); //main thread waits t1 to finish
+	//t1.detach(); // t1 runs on its own -- also called as daemon process
 
 	//you can join or detach a thread only once.
 	//if you want to rejoin after some time.
