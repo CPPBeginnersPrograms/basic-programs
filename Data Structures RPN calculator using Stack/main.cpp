@@ -33,7 +33,7 @@ int main()
 		//check for quit
 		else if (input == "q")
 		{
-			return 0;
+			return (0);
 		}
 		//invalid input
 		else
@@ -51,11 +51,11 @@ bool isOperator(const string &input)
 	{
 		if(ops[i] == input)
 		{
-			return true;
+			return (true);
 		}
 	}
 
-	return false;
+	return (false);
 }
 
 void performOp(const string &input, stack<double>&newStack)
