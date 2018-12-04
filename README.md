@@ -1,2 +1,2 @@
 # basic-programs
-Covers all the Fundamentals of C++ and Data sructures. 
+Covers all the Fundamentals of C++ and Data structures. 
